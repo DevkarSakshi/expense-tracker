@@ -1,0 +1,89 @@
+:root {
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(215, 25%, 27%);
+
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 25%, 27%);
+
+  --primary: hsl(210, 79%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+
+  --accent: hsl(210, 79%, 58%);
+  --accent-foreground: hsl(0, 0%, 100%);
+
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+
+  --success: hsl(142, 71%, 45%);
+  --success-foreground: hsl(0, 0%, 100%);
+
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(210, 79%, 58%);
+
+  --radius: 12px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  --sidebar-background: hsl(0, 0%, 98%);
+  --sidebar-foreground: hsl(240, 5.3%, 26.1%);
+  --sidebar-primary: hsl(240, 5.9%, 10%);
+  --sidebar-primary-foreground: hsl(0, 0%, 98%);
+}
+
+
+.dark {
+  --background: hsl(215, 28%, 17%);
+  --foreground: hsl(210, 40%, 98%);
+
+  --card: hsl(215, 28%, 20%);
+  --card-foreground: hsl(210, 40%, 98%);
+
+  --primary: hsl(210, 79%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+
+  --secondary: hsl(215, 28%, 25%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+
+  --muted: hsl(215, 28%, 25%);
+  --muted-foreground: hsl(215, 20%, 65%);
+
+  --accent: hsl(210, 79%, 58%);
+  --accent-foreground: hsl(0, 0%, 100%);
+
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+
+  --success: hsl(142, 71%, 45%);
+  --success-foreground: hsl(0, 0%, 100%);
+
+  --border: hsl(215, 28%, 30%);
+  --input: hsl(215, 28%, 30%);
+  --ring: hsl(210, 79%, 58%);
+
+  --sidebar-background: hsl(240, 5.9%, 10%);
+  --sidebar-foreground: hsl(240, 4.8%, 95.9%);
+  --sidebar-primary: hsl(224.3, 76.3%, 48%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}

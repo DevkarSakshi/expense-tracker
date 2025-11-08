@@ -1,0 +1,198 @@
+/* ===== Global Layout ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+  min-height: 100vh;
+}
+
+/* ===== App Wrapper ===== */
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+h1 {
+  color: #0d47a1;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background: #1976d2;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .expense-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .chart-container, .dashboard {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .export-buttons {
+    flex-direction: column;
+  }
+}
+
+/* ===== Top Right Buttons ===== */
+.top-right-buttons {
+  position: fixed; /* keeps buttons fixed top-right */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping if content is too long */
+  max-width: 300px; /* optional: constrain width */
+  z-index: 1000;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap; 
+}
+
+.user-name {
+  font-weight: 500;
+  color: #333; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+/* Dark mode */
+body.dark-mode .user-name {
+  color: #f1f5f9;
+}
+
+.btn-primary,
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid #1976d2;
+  background: transparent;
+  color: #1976d2;
+}
+
+.btn-outline.red {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.btn-outline:hover,
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Dark mode for body */
+body.dark-mode {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+/* Light mode (default) */
+.dashboard-title {
+  color: #0d47a1; /* blue */
+}
+
+/* Dark mode */
+body.dark-mode .dashboard-title {
+  color: #f1f5f9; /* light text for dark background */
+}
+
+
+/* Dark mode for .app wrapper */
+.app.dark {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+/* Optional: Navbar dark mode */
+body.dark-mode .navbar {
+  background: #334155;
+}
+
+body.dark-mode .navbar a {
+  color: #f1f5f9;
+}
+
+body.dark-mode .navbar a:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+/* Buttons dark mode */
+body.dark-mode .btn-primary {
+  background: #2563eb;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn-outline {
+  border-color: #f1f5f9;
+  color: #f1f5f9;
+}
+
+
